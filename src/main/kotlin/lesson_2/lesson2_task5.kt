@@ -12,9 +12,11 @@ fun main() {
     – Подсчитать размер вклада через 20 лет;
 
     – Результат должен быть дробным числом с 3 знаками после разделителя;
-    – Ответ должен получиться таким 1 536 438.428*/
+    – Ответ должен получиться таким 1536438.428*/
 
     val sum = 70000
-    val presentSum = sum * (1 + 0.01 * 16.7).pow(20)
-    println(presentSum)
+    val percentRate = 16.7
+    val countYears = 20
+    val presentSum = sum * (1 + 0.01 * percentRate).pow(countYears)
+    println(String.format("%.3f", presentSum))
 }
