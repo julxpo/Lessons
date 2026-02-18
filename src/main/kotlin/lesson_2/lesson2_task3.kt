@@ -22,5 +22,5 @@ fun main() {
     val minutesInTotal = onTheWay + minutesDeparture
     val hoursArrival = minutesInTotal / timeTransfer + hoursDeparture
     val minutesArrival = minutesInTotal % timeTransfer
-    println("Время прибытия: $hoursArrival$separator$minutesArrival") //про форматирование вывода не поняла, вроде и так правильно же выводится
+    println("Время прибытия: $hoursArrival$separator$minutesArrival")
 }
