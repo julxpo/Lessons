@@ -13,10 +13,11 @@ fun main() {
 
     val crystalOre = 7
     val ironOre = 11
+    val bonusPercent = 20
+    val oneHundred = 100
 
-    val buffCrystalOre = crystalOre * 20 /100
-    val buffIronOre = ironOre * 20 / 100
-    println("Кристаллическая руда "+buffCrystalOre)
-    println("Железная руда "+buffIronOre)
-
+    val crystalOreBonus = crystalOre * bonusPercent /oneHundred
+    val ironOreBonus = ironOre * bonusPercent / oneHundred
+    println("Добыто бонусной кристаллической руды: $crystalOreBonus")
+    println("Добыто бонусной железной руды: $ironOreBonus")
 }
