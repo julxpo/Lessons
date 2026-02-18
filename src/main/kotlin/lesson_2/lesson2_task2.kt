@@ -11,11 +11,15 @@ fun main() {
 
     Каждый пункт посчитать и сохранить в переменную с соответствующим названием. Все значения необходимо вывести в виде целых чисел.*/
 
-    val salaryOfEmployees = 50 * 30000
-    val salariesWithInterns = salaryOfEmployees + 30 * 20000
-    val average = salariesWithInterns / 80
+    val countWorkers = 50
+    val salaryWorkers = 30000
+    val countInterns = 30
+    val salaryInterns = 20000
+
+    val salaryOfEmployees = countWorkers * salaryWorkers
+    val salariesWithInterns = salaryOfEmployees + countInterns * salaryInterns
+    val average = salariesWithInterns / (countWorkers + countInterns)
     println(salaryOfEmployees)
     println(salariesWithInterns)
     println(average)
-
 }
