@@ -12,15 +12,15 @@ fun main() {
     val timeTransfer = 60
     val hoursDeparture = 9
     val minutesDeparture = 39
-    println("Время отправления: 0"+hoursDeparture+separator+minutesDeparture)
+    println("Время отправления: 0$hoursDeparture$separator$minutesDeparture")
 
     val onTheWay = 457
     val hoursOnTheWay = onTheWay / timeTransfer
     val minutesOnTheWay = onTheWay % timeTransfer
-    println("В пути "+hoursOnTheWay+" часов "+minutesOnTheWay+" минут")
+    println("В пути $hoursOnTheWay часов $minutesOnTheWay минут")
 
     val minutesInTotal = onTheWay + minutesDeparture
     val hoursArrival = minutesInTotal / timeTransfer + hoursDeparture
     val minutesArrival = minutesInTotal % timeTransfer
-    println("Время прибытия: "+hoursArrival+separator+minutesArrival) //про форматирование вывода не поняла, вроде и так правильно же выводится
+    println("Время прибытия: $hoursArrival$separator$minutesArrival") //про форматирование вывода не поняла, вроде и так правильно же выводится
 }
